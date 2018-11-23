@@ -73,24 +73,38 @@ namespace IfStatement
             Console.WriteLine("Please enter a number");
             int UserNumer = int.Parse(Console.ReadLine());
 
+            //switch (UserNumer)
+            //{
+            //    case 10:
+            //        Console.WriteLine("Your number is 10");
+            //        break;
+
+            //    case 20:
+            //        Console.WriteLine("Your number is 20");
+            //        break;
+
+            //    case 30:
+            //        Console.WriteLine("Your number is 30");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Your number is not 10, 20, 30);
+            //        break;
+            //}
+
+               // grouping cases to use a single CW as output with place holder
+
+
             switch (UserNumer)
             {
                 case 10:
-                    Console.WriteLine("Your number is 10");
-                    break;
-
                 case 20:
-                    Console.WriteLine("Your number is 20");
-                    break;
-
                 case 30:
-                    Console.WriteLine("Your number is 30");
+                    Console.WriteLine("Your number is {0}", UserNumer);
                     break;
                 default:
-                    Console.WriteLine("Your number is not 10, 20, 30);
+                    Console.WriteLine("Your number is not 10, 20 & 30");
                     break;
             }
-
 
         }
     }
